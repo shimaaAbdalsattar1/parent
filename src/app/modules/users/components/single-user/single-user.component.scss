@@ -1,0 +1,26 @@
+@import '../../../../../assets/sass/vars';
+.single-user-container{
+    text-align: center;
+    position: relative;
+    box-shadow: -2px 0 4px 0 rgba(0, 0, 0, 0.2);
+    background-color: $lightGray;
+    border-radius: 0 10px 10px 0;
+    height: 100%;
+    padding-top: 40px;
+    .avatar{
+        max-width: 100px;
+        border-radius: 100%;
+        margin-bottom: 15px;
+    }
+    .user-name{
+        color: $darkBlue;
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    .close-btn{
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 20px;
+    }
+}

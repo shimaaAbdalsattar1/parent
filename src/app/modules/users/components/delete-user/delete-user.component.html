@@ -1,0 +1,10 @@
+<ng-template #modalElem let-modal let-c="close" let-d="dismiss">
+    <div class="delete-user-container">
+        <div class="delete-msg">Are you sure you want to delete</div>
+        <div class="deleted-user-name">{{deletedUserData.first_name}} {{deletedUserData.last_name}}</div>
+        <div class="d-flex actions-full">
+            <button class="button" class="btn custom-btn-default btn-rounded" (click)="closeModal()">No</button>
+            <button type="submit" class="btn custom-btn-primary" (click)="deleteUser()">Yes</button>
+        </div>
+    </div>
+</ng-template>

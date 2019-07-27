@@ -1,0 +1,19 @@
+<app-header></app-header>
+<app-title-bar></app-title-bar>
+<div class="container">
+  <div class="d-flex main-container">
+    <div *ngIf="usersList.length>0" class="users-container flex-grow-1" infiniteScroll [infiniteScrollDistance]="3"
+      [infiniteScrollThrottle]="1000" [scrollWindow]="false" (scrolled)="onScroll()">
+      <div class="d-flex users-title">
+        <div class="flex-grow-1">User</div>
+        <div>Actions</div>
+      </div>
+      <div *ngFor="let user of usersList; let i = index">
+        <app-user-card [userInfo]="user" (userSelected)="showUserDetails($event)"></app-user-card>
+      </div>
+    </div>
+    <div *ngIf="selectedUserID" class="single-user">
+      <app-single-user [userID]="selectedUserID" (userClosed)="clearSelection()"></app-single-user>
+    </div>
+  </div>
+</div>

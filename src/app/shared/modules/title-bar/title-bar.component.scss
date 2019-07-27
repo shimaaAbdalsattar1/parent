@@ -1,0 +1,21 @@
+@import '../../../../assets/sass/vars';
+.title-bar{
+    padding: 20px 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    background-color: $darkGray;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    .breadcrumb{
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        a{
+            color: $purble;
+            padding: 0 3px;
+        }
+    }
+    .page-title{
+        margin: 0;
+        font-size: 30px;
+        font-weight: normal;
+    }
+}

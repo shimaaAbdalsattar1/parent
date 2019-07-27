@@ -1,0 +1,23 @@
+<div class="title-bar">
+    <div class="container">
+        <div class="d-flex">
+            <div class="mr-auto">
+                <div>
+                    <ul class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li>/</li>
+                        <li><a href="#">Dashboard</a></li>
+                    </ul>
+                </div>
+                <h1 class="page-title">Users List</h1>
+            </div>
+            <div>
+                <button class="btn custom-btn-primary"  (click)="addNewUser()">
+                    <i class="fa fa-plus" aria-hidden="true"> </i> New User
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<app-add-edit-user [isopened]="isOpenedAddUserModal"></app-add-edit-user>

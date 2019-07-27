@@ -1,0 +1,21 @@
+@import '../../../assets/sass/vars';
+.login-container{
+    background-color: $white;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    margin: 30px 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 30px;
+    .logo{
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px dashed $darkGray;
+        text-align: center;
+    }
+    .error-msg{
+        text-align: center;
+        margin-top: 15px;
+        font-size: 16px;
+        color: $warning;
+    }
+}

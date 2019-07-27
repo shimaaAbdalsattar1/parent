@@ -1,0 +1,22 @@
+<div class="d-flex">
+  <div class="user-card flex-grow-1">
+    <div class="d-flex user-data" >
+      <div class="flex-grow-1" (click)="selectUser()">
+          <img [src]="userInfo.avatar" class="avtar"> {{userInfo.first_name}} {{userInfo.last_name}}
+      </div>
+      <div class="actions">
+          <button (click)="editUser()" class="btn custom-btn-default">
+              <i class="fa fa-pencil" aria-hidden="true"> </i>
+          </button>
+          <button (click)="deleteUser()" class="btn custom-btn-default">
+              <i class="fa fa-trash" aria-hidden="true"> </i>
+          </button>
+      </div>
+    </div>
+    <!-- <div *ngFor="let user of usersList; let i = index">
+      <app-user-card [userInfo]="user" (userSelected)="showUserDetails($event)"></app-user-card>
+    </div> -->
+  </div>
+</div>
+<app-add-edit-user [isopened]="isOpenedEditModal" [edittedUserData]="userInfo"></app-add-edit-user>
+<app-delete-user [isopened]="isOpenedDeleteModal" [deletedUserData]="userInfo"></app-delete-user>

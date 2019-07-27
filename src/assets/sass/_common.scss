@@ -1,0 +1,73 @@
+body{
+    font-size: 14px;
+    color: $darkBlue;
+    background-color: $lightGray;
+}
+// fix issue of toaster library
+#toast-container > div {
+    opacity:1;
+}
+
+.d-flex{
+    align-items: center;
+}
+
+.custom-btn-primary{
+    border-radius: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    background-color: $purble;
+    border: none;
+    padding: 8px 25px;
+    outline: none;
+    color: $white;
+    font-size: 14px;
+    &:hover{
+        background-color: $darkPurble;
+        color: $white;
+    }
+}
+
+.btn-rounded{
+    border-radius: 20px;
+}
+
+.custom-btn-default{
+    border: 1px solid $purble;
+    color: $purble;
+    padding: 4px 10px;
+    &:hover{
+        background-color: $lightGray;
+        color: $purble;
+    }
+}
+
+.custom-btn-link{
+    border: none;
+    padding: 0;
+}
+
+.actions-full{
+    .btn{
+        flex-grow: 1;
+        margin: 0 5px;
+    }
+}
+
+.form-control{
+    margin-bottom: 20px;
+    &:focus{
+        border-color: $purble;
+        box-shadow: none;
+    }
+}
+
+.form-label{
+    color: $gray;
+    margin-bottom: 5px;
+}
+
+.modal.show{
+    .modal-dialog{
+        margin-top: 15%;
+    }
+} 

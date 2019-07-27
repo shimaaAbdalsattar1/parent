@@ -1,0 +1,21 @@
+<ng-template #modalElem let-modal let-c="close" let-d="dismiss">
+    <div class="add-edit-container">
+        <div class="avatar">
+            <img *ngIf="edittedUserData" [src]="edittedUserData.avatar">
+            <span class="user-icon" *ngIf="!edittedUserData">
+                <i class="fa fa-user" aria-hidden="true"> </i>
+            </span>
+        </div>
+        <form class="" autocomplete="off" #form="ngForm">
+            <div class="form-label">Name</div>
+            <input type="text" class="form-control" name="userName" placeholder="Name" [(ngModel)]="user.name" required>
+            <div class="form-label">Job</div>
+            <input type="text" class="form-control" name="userJob" placeholder="Job" [(ngModel)]="user.job" required>
+            <div class="d-flex actions-full">
+                <button class="button" class="btn custom-btn-default btn-rounded" (click)="closeModal()">Cancel</button>
+                <button type="submit" class="btn custom-btn-primary" [disabled]="!form.valid" (click)="submitForm()">{{edittedUserData?
+                            'Save' : 'Add'}}</button>
+            </div>
+        </form>
+    </div>
+</ng-template>

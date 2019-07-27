@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="login-container">
+        <div class="logo"><img src="../../../assets/img/logo.svg"></div>
+        <form autocomplete="off" #form="ngForm">
+            <div class="form-label">Email</div>
+            <input type="email" class="form-control" name="email" placeholder="Email" [(ngModel)]="user.email" email required>
+            <div class="form-label">Passowrd</div>
+            <input type="password" class="form-control" name="password" placeholder="Passowrd" [(ngModel)]="user.password"
+                required>
+            <div class="d-flex actions-full">
+                <button type="submit" class="btn custom-btn-primary" [disabled]="!form.valid" (click)="submitForm()">Login</button>
+            </div>
+            <div class="error-msg">{{errorMsg}}</div>
+        </form>
+    </div>
+</div>

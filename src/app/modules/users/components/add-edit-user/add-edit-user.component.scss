@@ -1,0 +1,26 @@
+@import '../../../../../assets/sass/vars';
+.add-edit-container{
+    padding: 15px;
+    .avatar{
+        text-align: center;
+        margin-top: -50px;
+        margin-bottom: 20px;
+        img{
+            max-width: 80px;
+            border-radius: 100%;
+            border: 4px solid $white;
+            box-sizing: content-box;
+        }
+        .user-icon{
+            width: 80px;
+            height: 80px;
+            background-color: $gray;
+            border-radius: 100%;
+            border: 4px solid $white;
+            box-sizing: content-box;
+            display: inline-block;
+            font-size: 42px;
+            color: $white;
+        }
+    }
+}

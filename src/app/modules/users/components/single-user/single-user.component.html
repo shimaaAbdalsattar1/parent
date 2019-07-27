@@ -1,0 +1,20 @@
+<div class="single-user-container">
+<div *ngIf="userData">
+  <img class="avatar" [src]="userData.avatar">
+  <div class="user-name">{{userData.first_name}} {{userData.last_name}}</div>
+</div>
+<div class="d-flex actions-full">
+<button class="btn custom-btn-link close-btn" (click)="close()">
+    <i class="fa fa-times" aria-hidden="true"> </i>
+</button>
+<button class="btn custom-btn-primary" (click)="editUser()">
+    <i class="fa fa-pencil" aria-hidden="true"> </i> Edit
+</button>
+<button class="btn custom-btn-default btn-rounded" (click)="deleteUser()">
+    <i class="fa fa-trash" aria-hidden="true"> </i> Delete
+</button>
+</div>
+</div>
+
+<app-add-edit-user [isopened]="isOpenedEditModal" [edittedUserData]="userData"></app-add-edit-user>
+<app-delete-user [isopened]="isOpenedDeleteModal" [deletedUserData]="userData"></app-delete-user>

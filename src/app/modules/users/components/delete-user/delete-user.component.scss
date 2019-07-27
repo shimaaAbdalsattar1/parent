@@ -1,0 +1,13 @@
+@import '../../../../../assets/sass/vars';
+.delete-user-container{
+    padding: 15px;
+    text-align: center;
+    .delete-msg{
+        margin: 30px 0 15px 0;
+        color: $lightBlack;
+    }
+    .deleted-user-name{
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+}

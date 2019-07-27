@@ -1,0 +1,14 @@
+@import '../../../../assets/sass/vars';
+.header{
+    padding: 15px 0;
+    background-color: $white;
+    .nav{
+        li{
+            margin-right: 10px;
+            a{
+                color: $darkBlue;
+                padding: 5px;
+            }
+        }
+    }
+}
